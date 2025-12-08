@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+    <div class="overlay">
+        <nav class="navbar">
+            <div class="nav-center">
+                <div class="logo">FUNZONE</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="table.html">Games</a></li>
+                    <li><a href="form.html">Booking</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+       
+        <div class="booking-box">
+            <h2>Book your FunZone Experience </h2>
+            <form>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <br><br>
+                <label for="phone">Phone Number</label>
+                <input type="number" id="phone" placeholder="Enter your phone number" required>
+                <br><br>
+                <label for="people">No. of People</label>
+                <input type="number" id="people" min="1" placeholder="Enter number of people" required>
+                <br><br>
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+                <br><br>
+                <label for="time">Time</label>
+                <input type="time" id="time" required>
+                <br><br>
+                <label for="activity">Activity</label>
+                <select id="activity" required>
+                    <option value="">Select Activity</option>
+                    <option>Basic Access</option>
+                    <option>VIP Access</option>
+                    <option>Premium Access</option>
+                    <option>Weekly Membership</option>
+                    <option>Monthly Membership</option>
+                    <option>Yearly Membership</option>
+                </select>
+                <br><br>
+                <label for="payment">Payment Method</label>
+                <select id="payment" required>
+                    <option value="">Select Payment Method</option>
+                    <option>Cash</option>
+                    <option>Credit / Debit Card</option>
+                    <option>Online Payment</option>
+                </select>
+                <br><br>
+                <button type="submit" class="book-btn" onclick="alert('Your Booking is Confirmed!')">Book Now</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+</html>
