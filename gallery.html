@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+    <div class="overlay">
+
+        <nav class="navbar">
+            <div class="nav-center">
+                <div class="logo">FUNZONE</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="table.html">Pricing</a></li>
+                    <li><a href="form.html">Booking</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Gallery</h1>
+            <h2>Explore Our Arena</h2>
+            <p>Check out the exciting moments and top-notch facilities we offer!</p>
+        </header>
+
+               <section class="gallery">
+            <div class="gallery-title">
+                <h2>Our Arena in Action</h2>
+                <p>Check out the exciting moments and top-notch facilities!</p>
+            </div>
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="Images/gallery1.png" alt="Arena Image 1" class="gallery-image" onclick="openModal(this)">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Images/gallery2.png" alt="Arena Image 2" class="gallery-image" onclick="openModal(this)">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Images/gallery3.jpg" alt="Arena Image 3" class="gallery-image" onclick="openModal(this)">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Images/gallery4.png" alt="Arena Image 4" class="gallery-image" onclick="openModal(this)">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Images/gallery5.jpg" alt="Arena Image 5" class="gallery-image" onclick="openModal(this)">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Images/gallery6.png" alt="Arena Image 6" class="gallery-image" onclick="openModal(this)">
+                </div>
+            </div>
+        </section>
+
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+    </div>
+
+    <script>
+
+        function openModal(img) {
+            const modal = document.getElementById("imageModal");
+            const modalImage = document.getElementById("modalImage");
+            modal.style.display = "block";
+            modalImage.src = img.src;
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
